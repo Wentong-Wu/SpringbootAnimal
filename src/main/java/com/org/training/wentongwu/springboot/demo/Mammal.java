@@ -32,11 +32,11 @@ public abstract class Mammal extends Animal{
 
     @Override
     public String breath() {
-        return "Inhale...";
+        return "Mammal breath";
     }
 
     @Override
     public String breed(){
-        return "Breeding";
+        return "Mammal breed";
     }
 }

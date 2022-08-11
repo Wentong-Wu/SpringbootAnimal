@@ -7,20 +7,20 @@ public class FlyingRat extends Bird implements Flying{
     }
     @Override
     public String eat() {
-        return "food???????..";
+        return "flying rat eat";
     }
     @Override
     public String takeOff() {
-        return "Run...Jump...";
+        return "flying rat take off";
     }
 
     @Override
     public String flying() {
-        return "flapping...";
+        return "flying rat flying";
     }
 
     @Override
     public String landing() {
-        return "Slow...land.";
+        return "flying rat landing";
     }
 }

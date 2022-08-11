@@ -18,7 +18,7 @@ public class Cat extends Mammal {
 
     @Override
     public String eat() {
-        return "Milk...";
+        return "cat eat";
     }
 
     public void Attack(Animal o)
@@ -26,6 +26,6 @@ public class Cat extends Mammal {
         o.setHealth(o.getHealth()-getDamagePower());
     }
     public String kill(){
-        return "Sus...";
+        return "cat kill";
     }
 }

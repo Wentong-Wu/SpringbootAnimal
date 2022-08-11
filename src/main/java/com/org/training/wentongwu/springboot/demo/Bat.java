@@ -6,25 +6,25 @@ public class Bat extends Mammal implements Flying{
         super(name,health,hair,isMale);
     }
     public String scream(){
-        return "reeeeeeeeeeeee";
+        return "Scream";
     }
     @Override
     public String eat() {
-        return "Blood..???";
+        return "Bat eat";
     }
 
     @Override
     public String takeOff() {
-        return "Drop...Flap";
+        return "bat take off";
     }
 
     @Override
     public String flying() {
-        return "Flapping...very fast...";
+        return "bat flying";
     }
 
     @Override
     public String landing() {
-        return "Upside Down.....";
+        return "bat landing";
     }
 }

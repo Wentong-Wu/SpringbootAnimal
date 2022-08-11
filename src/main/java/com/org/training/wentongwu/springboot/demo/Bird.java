@@ -7,10 +7,10 @@ public abstract class Bird extends Animal{
     }
     @Override
     public String breath() {
-        return "Exhale...";
+        return "bird breath";
     }
     @Override
     public String breed(){
-        return "Breedingg";
+        return "bird breed";
     }
 }

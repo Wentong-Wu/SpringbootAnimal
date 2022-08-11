@@ -31,13 +31,13 @@ public abstract class Animal {
     }
 
     public String Move() {
-        return "Zoom..";
+        return "Move";
     }
     public String Sleep(){
-        return "Zzz..";
+        return "Sleep";
     }
     public String Poop(){
-        return "Stinky..";
+        return "Poop";
     }
     public void Died(){
         this.isAlive = false;
