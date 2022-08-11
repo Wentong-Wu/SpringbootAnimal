@@ -1,6 +1,7 @@
 package com.org.training.wentongwu.springboot.demo;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
@@ -106,5 +107,9 @@ class DemoApplicationTests {
 		String json = "[{\"Damagepower\":10,\"hair\":true,\"isMale\":true,\"health\":100,\"isAlive\":true,\"name\":\"Tom\"},{\"hair\":true,\"isMale\":true,\"health\":100,\"isAlive\":true,\"name\":\"Vamp\"},{\"health\":20,\"isAlive\":true,\"name\":\"Rat\"},{\"health\":30,\"isAlive\":true,\"name\":\"Peng\"}]";
 		AnimalCollection animalCollection = new AnimalCollection();
 		assertEquals(json,animalCollection.toString());
+	}
+	@Test
+	public void main(){
+		DemoApplication.main(new String[] {});
 	}
 }
