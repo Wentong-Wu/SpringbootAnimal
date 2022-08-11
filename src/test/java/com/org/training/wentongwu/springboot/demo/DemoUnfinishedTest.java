@@ -54,7 +54,7 @@ public class DemoUnfinishedTest {
         Bat bat = new Bat("Vamp",100,true,true);
         assertEquals("bat flying",bat.flying());
     }
-    @Test
+    @Test//
     public void test_bat_landing(){
         Bat bat = new Bat("Vamp",100,true,true);
         assertEquals("bat landing",bat.landing());
