@@ -3,6 +3,8 @@ package com.org.training.wentongwu.springboot.demo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
@@ -85,5 +87,11 @@ class DemoApplicationTests {
 		Bat testBat = new Bat("vamp",100,true,true);
 		testBat.setHealth(50);
 		assertEquals(50,testBat.getHealth());
+	}
+	@Test
+	public void test_getAnimalCollection(){
+		AnimalCollection animalCollection = new AnimalCollection();
+		List<Animal> animallength = animalCollection.getAnimalCollection();
+		assertEquals(4,animallength.size());
 	}
 }
