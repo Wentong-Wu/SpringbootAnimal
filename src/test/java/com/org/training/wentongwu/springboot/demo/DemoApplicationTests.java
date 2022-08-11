@@ -1,6 +1,5 @@
 package com.org.training.wentongwu.springboot.demo;
 
-import io.cucumber.java.en_scouse.An;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
