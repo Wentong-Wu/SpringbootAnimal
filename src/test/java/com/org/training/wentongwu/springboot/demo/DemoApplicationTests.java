@@ -90,9 +90,16 @@ class DemoApplicationTests {
 		assertEquals(50,testBat.getHealth());
 	}
 	@Test
-	public void test_getAnimalCollection(){
+	public void test_get_AnimalCollection(){
 		AnimalCollection animalCollection = new AnimalCollection();
 		List<Animal> animallength = animalCollection.getAnimalCollection();
 		assertEquals(4,animallength.size());
+	}
+	@Test
+	public void test_add_animalCollection(){
+		AnimalCollection animalCollection = new AnimalCollection();
+		animalCollection.addAnimalCollection(new Cat("Tim",50,true,true,30));
+		List<Animal> animalList = animalCollection.getAnimalCollection();
+		assertEquals(5,animalList.size());
 	}
 }
