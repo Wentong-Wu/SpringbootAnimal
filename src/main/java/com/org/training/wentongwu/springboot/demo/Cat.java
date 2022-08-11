@@ -2,7 +2,6 @@ package com.org.training.wentongwu.springboot.demo;
 
 public class Cat extends Mammal {
     private int Damagepower;
-    private float hunger = 100;
     public Cat(String name,int health, boolean hair,boolean isMale, int damagepower)
     {
         super(name,health,hair,isMale);
