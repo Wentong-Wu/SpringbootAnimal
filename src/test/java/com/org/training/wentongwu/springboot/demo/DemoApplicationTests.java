@@ -107,6 +107,13 @@ class DemoApplicationTests {
 		String json = "[{\"Damagepower\":10,\"hair\":true,\"isMale\":true,\"health\":100,\"isAlive\":true,\"name\":\"Tom\"},{\"hair\":true,\"isMale\":true,\"health\":100,\"isAlive\":true,\"name\":\"Vamp\"},{\"health\":20,\"isAlive\":true,\"name\":\"Rat\"},{\"health\":30,\"isAlive\":true,\"name\":\"Peng\"}]";
 		AnimalCollection animalCollection = new AnimalCollection();
 		assertEquals(json,animalCollection.toString());
+
+	}
+	@Test
+	void test_demoApp_myResponse(){
+		String json = "[{\"Damagepower\":10,\"hair\":true,\"isMale\":true,\"health\":100,\"isAlive\":true,\"name\":\"Tom\"},{\"hair\":true,\"isMale\":true,\"health\":100,\"isAlive\":true,\"name\":\"Vamp\"},{\"health\":20,\"isAlive\":true,\"name\":\"Rat\"},{\"health\":30,\"isAlive\":true,\"name\":\"Peng\"}]";
+		DemoApplication demoApplication = new DemoApplication();
+		assertEquals(json,demoApplication.myResponse());
 	}
 	@Test
 	public void main(){
