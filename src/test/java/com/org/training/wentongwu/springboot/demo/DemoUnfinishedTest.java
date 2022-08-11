@@ -17,4 +17,19 @@ public class DemoUnfinishedTest {
         Cat cat = new Cat("Tom",100,true,true,10);
         assertEquals("cat kill",cat.kill());
     }
+    @Test
+    public void test_animal_move(){
+        Cat cat = new Cat("Tom",100,true,true,10);
+        assertEquals("Move",cat.Move());
+    }
+    @Test
+    public void test_animal_sleep(){
+        Cat cat = new Cat("Tom",100,true,true,10);
+        assertEquals("Sleep",cat.Sleep());
+    }
+    @Test
+    public void test_animal_poop(){
+        Cat cat = new Cat("Tom",100,true,true,10);
+        assertEquals("Poop",cat.Poop());
+    }
 }

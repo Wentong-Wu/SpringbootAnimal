@@ -30,15 +30,9 @@ public abstract class Animal {
         this.health = health;
     }
 
-    public String Move() {
-        return "Move";
-    }
-    public String Sleep(){
-        return "Sleep";
-    }
-    public String Poop(){
-        return "Poop";
-    }
+    public String Move() {return "Move";}
+    public String Sleep(){return "Sleep";}
+    public String Poop(){return "Poop";}
     public void Died(){
         this.isAlive = false;
     }
