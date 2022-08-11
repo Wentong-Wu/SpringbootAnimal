@@ -86,5 +86,4 @@ class DemoApplicationTests {
 		testBat.setHealth(50);
 		assertEquals(50,testBat.getHealth());
 	}
-
 }
