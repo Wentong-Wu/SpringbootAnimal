@@ -6,6 +6,13 @@ import java.util.List;
 public class AnimalCollection {
     private List<Animal> animalCollection = new ArrayList<>();
 
+    public AnimalCollection(){
+        this.animalCollection.add(new Cat("Tom",100,true,true,10));
+        this.animalCollection.add(new Bat("Vamp",100,true,true));
+        this.animalCollection.add(new FlyingRat("Rat",20));
+        this.animalCollection.add(new Penguin("Peng",30));
+    }
+
     public List<Animal> getAnimalCollection(){
         return this.animalCollection;
     }
