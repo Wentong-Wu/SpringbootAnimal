@@ -20,6 +20,10 @@ public class DemoApplication {
 	@GetMapping("/customRoute")
 	public String myResponse(){
 		AnimalCollection animalCollection = new AnimalCollection();
+		animalCollection.addAnimalCollection(new Cat("Tom",100,true,true,10));
+		animalCollection.addAnimalCollection(new Bat("Vamp",100,true,true));
+		animalCollection.addAnimalCollection(new FlyingRat("Rat",20));
+		animalCollection.addAnimalCollection(new Penguin("Peng",30));
 		return animalCollection.toString();
 	}
 }
