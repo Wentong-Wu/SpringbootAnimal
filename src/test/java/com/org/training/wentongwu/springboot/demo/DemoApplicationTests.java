@@ -115,8 +115,4 @@ class DemoApplicationTests {
 		DemoApplication demoApplication = new DemoApplication();
 		assertEquals(json,demoApplication.myResponse());
 	}
-	@Test
-	public void main(){
-		DemoApplication.main(new String[] {});
-	}
 }
