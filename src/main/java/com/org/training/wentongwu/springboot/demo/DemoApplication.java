@@ -12,7 +12,6 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	public static AnimalCollection animalCollection = new AnimalCollection();
-	@CrossOrigin("http://localhost:3000")
 	@GetMapping("/customRoute")
 	@ResponseBody
 	public String myResponse(){
@@ -23,5 +22,9 @@ public class DemoApplication {
 	@ResponseBody
 	public void change(@RequestParam String name, @RequestParam int health){
 		animalCollection.addAnimalCollection(new FlyingRat(name,health));
+	}
+	@RequestMapping("/")
+	public String helloWorld(){
+		return "HelloWorld111";
 	}
 }
